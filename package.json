@@ -1,0 +1,46 @@
+{
+  "name": "code-editor-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"electron .\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@monaco-editor/react": "^4.6.0",
+    "monaco-editor": "^0.45.0",
+    "electron-store": "^8.1.0",
+    "react-router-dom": "^6.20.1",
+    "marked": "^11.0.0",
+    "highlight.js": "^11.9.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "clsx": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "which": "^4.0.0",
+    "zustand": "^4.4.7",
+    "node-pty": "^1.0.0",
+    "vscode-languageserver-protocol": "^3.17.5",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageclient": "^9.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "@swc/core": "^1.3.99",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.9.1",
+    "concurrently": "^8.2.2"
+  }
+}
